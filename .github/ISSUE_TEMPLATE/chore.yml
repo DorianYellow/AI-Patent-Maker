@@ -1,0 +1,14 @@
+name: Chore
+description: Other Tasks
+title: ":hammer: chore : "
+labels: ["chore"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: Content
+      description: Please describe the part you want to work on.
+      value: |
+        -
+    validations:
+      required: true 

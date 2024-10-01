@@ -1,0 +1,14 @@
+name: Optimization
+description: Code Optimization
+title: ":racehorse: Opt : "
+labels: ["optimization"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: Content
+      description: Please describe the parts that have been optimized.
+      value: |
+        -
+    validations:
+      required: true

@@ -1,0 +1,35 @@
+name: Bug Report
+description: Bug Report
+title: ":bug: fix : "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Symptoms
+      description: Please describe what issue occurred.
+    validations:
+      required: true
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: How to Reproduce
+      description: Please explain how to reproduce the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Please attach a screenshot to help understand the issue.
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Result
+      description: Please describe what the result should have been if there was no bug.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Please copy and attach the error logs.
+      render: Shell

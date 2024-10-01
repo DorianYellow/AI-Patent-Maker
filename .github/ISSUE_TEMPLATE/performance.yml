@@ -1,0 +1,14 @@
+name: Performance
+description: Code Performance
+title: ":racehorse: Performance : "
+labels: ["rocket"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: Content
+      description: Please describe the parts that have been improved.
+      value: |
+        -
+    validations:
+      required: true

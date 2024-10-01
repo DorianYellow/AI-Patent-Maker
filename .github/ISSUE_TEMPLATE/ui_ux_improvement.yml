@@ -1,0 +1,14 @@
+name: UI/UX Improvement
+description: UI/UX Improvement
+title: ":lipstick: UI/UX Improvement : "
+labels: ["UI/UX Improvement"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: Content
+      description: Please describe the parts that have been created or edited.
+      value: |
+        -
+    validations:
+      required: true

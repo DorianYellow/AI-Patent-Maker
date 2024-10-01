@@ -1,0 +1,14 @@
+name: Feature Request
+description: Add New Feature
+title: ":sparkles: feat : "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: Content
+      description: Please describe the feature you want to add.
+      value: |
+        -
+    validations:
+      required: true

@@ -1,0 +1,14 @@
+name: Refactoring
+description: Code Refactoring
+title: ":recycle: refactor : "
+labels: ["refactoring"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: Content
+      description: Please describe the parts that have been refactored.
+      value: |
+        -
+    validations:
+      required: true
