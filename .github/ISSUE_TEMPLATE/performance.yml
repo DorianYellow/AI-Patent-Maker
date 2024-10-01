@@ -1,7 +1,7 @@
 name: Performance
 description: Code Performance
-title: ":racehorse: Performance : "
-labels: ["rocket"]
+title: ":rocket: Perf : "
+labels: ["performance"]
 body:
   - type: textarea
     id: feature
