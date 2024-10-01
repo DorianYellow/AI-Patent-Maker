@@ -1,6 +1,6 @@
 name: Documentation
 description: Documentation
-title: ":memo: documentation : "
+title: ":memo: doc : "
 labels: ["documentation"]
 body:
   - type: textarea
