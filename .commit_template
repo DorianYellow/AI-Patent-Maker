@@ -1,0 +1,44 @@
+# (gitmoji) <type> : <title><issue number>
+
+##### Keep the title to a maximum of 50 characters on one line with issue number ## -> |
+
+# Write the body here
+
+######## Keep each line in the body to a maximum of 72 characters ############### -> |
+
+# --- COMMIT END ---
+
+# <type> list:
+
+# ✨(:sparkles:) feat: Feature (introduce new feature)
+
+# 🐛(:bug:) fix: Bug (fix a bug)
+
+# ♻(:recycle:) refactor: Refactoring (code changes that neither fixes a bug nor adds a feature)
+
+# 💄(:lipstick:) style: Style (UI or cosmetic changes)
+
+# 📝(:memo:) docs: Documentation (changes or updates to docs)
+
+# ✅(:white_check_mark:) test: Tests (add, modify, or delete tests, no business logic changes)
+
+# 🔨(:hammer:) chore: Chore (miscellaneous updates such as build script changes, dependencies updates)
+
+# 🚀(:rocket:) perf: Performance (improve performance)
+
+# 🐎(:racehorse:) opt: Optimization (improve code efficiency)
+
+# 💥(:boom:) breaking: Breaking changes (introduce breaking changes)
+
+# 🎉(:tada:) init: Initial commit (first commit in a repository)
+# ------------------
+
+# Use imperative mood in the title
+
+# Avoid a period (.) at the end of the title
+
+# Separate title from body with a blank line
+
+# In the body, explain "what" and "why" rather than "how"
+
+# Write each sentence in the body and separate with periods.
