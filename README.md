@@ -41,9 +41,8 @@ Simply write down your idea, and AI Patent Maker will help you bring it to life 
 ```
 ### Output :
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2d7d00f5-d2ed-4a91-a07e-2fbd5638c8be" width="777px" alt="image">
+  <img src="https://github.com/user-attachments/assets/f5ec8b22-927e-444d-b6fb-8203b77d420f" width="777px" alt="image">
 </p>
-
 
 
 
