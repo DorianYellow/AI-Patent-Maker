@@ -39,7 +39,7 @@ Simply write down your idea, and AI Patent Maker will help you bring it to life 
 상기 바디부에는 묶음 구멍이 형성되는 것이 바람직하다.
 ### Output : Gemma2 vs AI Patent Maker
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e34c2447-822c-43de-a7bc-47458f4ddeda" alt="image">
+  <img src="https://github.com/user-attachments/assets/2d7d00f5-d2ed-4a91-a07e-2fbd5638c8be" width="777px" alt="image">
 </p>
 
 
