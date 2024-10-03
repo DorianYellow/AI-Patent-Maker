@@ -25,7 +25,7 @@ Simply write down your idea, and AI Patent Maker will help you bring it to life 
 
 ## Gemma2 vs AI Patent Maker
 - This project utilizes Google's `Gemma2-2B-it` model as the base model, which has been fine-tuned using the LoRA (Low-Rank Adaptation) technique.
-- Here’s how you can phrase the section for comparing outputs between `Gemma2` and `fine-tuned model`, AI Patent Maker:
+- Here’s how you can phrase the section for comparing outputs between `Gemma2` and fine-tuned model, `AI Patent Maker`:
 ### Input :
 ```
 아래의 '발명에 관한 설명'을 바탕으로 '발명의 명칭'과 '청구항'을 특허 문서의 형식으로 작성해주세요.: 
