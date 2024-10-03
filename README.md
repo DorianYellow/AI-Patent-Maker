@@ -1,12 +1,11 @@
 # 💡 AI Patent Maker !
 
-`AI Patent Maker` is an LLM-based service that assists with the complex and challenging task of drafting patent documents.
-
-Simply write down your idea, and AI Patent Maker will help you bring it to life with detailed specifications.
-
-<img src="https://github.com/user-attachments/assets/240e3985-02d0-41b5-94a1-ccbd39aa14ae" width="777px" alt="GIF description"/>
-
-The invention cited in the example is based on the following patent invention : reg_no 1020240121955
+- `AI Patent Maker` is an LLM-based service that assists with the complex and challenging task of drafting patent documents.
+- Simply write down your idea, and AI Patent Maker will help you bring it to life with detailed specifications.
+- The invention cited in the below example is based on the following patent invention : reg_no 1020240121955
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/240e3985-02d0-41b5-94a1-ccbd39aa14ae" width="777px" alt="GIF description"/>
+</p>
 
 
 ## Introduction
