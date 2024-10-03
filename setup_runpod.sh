@@ -20,6 +20,8 @@ curl -L -O https://huggingface.co/ys-s/pat_name_claim/resolve/main/unsloth.Q5_K_
 # Ollama 서버 실행 (백그라운드 실행)
 (ollama serve > ollama.log 2>&1) &
 
+ollama ps
+
 # Modelfile 생성
 echo "FROM unsloth.Q5_K_M.gguf
 
@@ -45,9 +47,15 @@ PARAMETER stop </s>
 
 # Ollama 모델 생성
 ollama create test_model3_prompt3 -f Modelfile
+ollama list
 
 # 레포지토리 디렉토리로 이동
 cd AI-Patent-Maker
+
+mkdir .streamlit
+cd .streamlit
+echo "[ server ]
+enableCORS = false" > config.toml
 
 # 가상 환경 생성 및 활성화
 python3 -m venv pat
