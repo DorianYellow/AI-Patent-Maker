@@ -18,7 +18,7 @@ apt-get install -y vim
 curl -L -O https://huggingface.co/ys-s/pat_name_claim/resolve/main/unsloth.Q5_K_M.gguf
 
 # Ollama 서버 실행 (백그라운드 실행)
-(ollama serve > ollama.log 2>&1) &
+ollama serve > ollama.log 2>&1
 
 ollama ps
 
@@ -59,11 +59,12 @@ enableCORS = false" > config.toml
 
 # 가상 환경 생성 및 활성화
 cd ..
-python3 -m venv pat
-source pat/bin/activate
+VENV_NAME="pat"
+python3 -m venv $VENV_NAME
+source $VENV_NAME/bin/activate
 
 # 필요한 패키지 설치
 pip install streamlit ollama
 
 # Streamlit 애플리케이션 실행 (백그라운드 실행)
-(streamlit run app.py > app.log 2>&1) &
+streamlit run app.py > app.log 2>&1
