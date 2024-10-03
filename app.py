@@ -1,98 +1,20 @@
 import streamlit as st
-import ollama
+from styles import apply_css
+from utils import initialize_session_state, on_textarea_change
+from response_generator import response_generator
 
 # CSS 스타일링 적용
-st.markdown(
-    """
-    <style>
-    /* Noto Sans KR 폰트 링크 추가 */
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-
-    .block-container {
-        max-width: 70%;
-        padding-top: 2rem;
-        margin: auto;
-    }
-    h1 {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 3rem;
-    }
-    h1 span {
-        color: blue;
-    }
-    h2.subheader {
-        text-align: center;
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;  /* 소제목과 입력란 사이 간격 조절 */
-    }
-    .header-text {
-        text-align: center;
-        font-size: 1.3rem;
-        color: gray;
-        margin-bottom: 4rem;
-    }
-    .error-message {
-        color: red;
-        font-size: 0.9rem;
-        min-height: 1.2rem;  /* 에러 메시지 공간 확보 */
-    }
-    .instruction-list {
-        font-size: 0.9rem;
-        font-family: 'Noto Sans KR', sans-serif;  /* 전체 폰트 변경 */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
+apply_css()
 
 # 서비스 제목과 부제목
 st.markdown(
-    "<h1><span style='color: blue;'>&nbsp;&nbsp;&nbsp;AI</span> Patent Maker!</h1>",
+    "<h1><span style='color: blue;'>AI</span> Patent Maker!</h1>",
     unsafe_allow_html=True,
 )
 st.markdown("<p class='header-text'> </p>", unsafe_allow_html=True)
 
-
-# Streamed response emulator
-def response_generator(prompt):
-    # 실제 응답 생성 로직을 여기에 추가
-    response = ollama.generate(model="test_model3", prompt=prompt, stream=True)
-    for chunk in response:
-        if chunk["response"] == "\n":
-            chunk["response"] = "\n\n"
-        yield chunk["response"]
-
-
 # 세션 상태 초기화
-if "response" not in st.session_state:
-    st.session_state["response"] = ""
-if "generated" not in st.session_state:
-    st.session_state["generated"] = False
-if "error" not in st.session_state:
-    st.session_state["error"] = ""
-if "prompt" not in st.session_state:
-    st.session_state["prompt"] = ""
-
-
-# 입력 변경 시 호출되는 콜백 함수 정의
-def on_textarea_change():
-    prompt = st.session_state["prompt"]
-    if len(prompt) > 0:
-        if len(prompt) < 100:
-            st.session_state["error"] = "100자 이상 입력해야 합니다"
-            st.session_state["generated"] = False
-            st.session_state["response"] = ""
-        else:
-            st.session_state["error"] = ""
-            st.session_state["generated"] = True
-            st.session_state["response"] = ""
-    else:
-        st.session_state["error"] = ""
-        st.session_state["generated"] = False
-        st.session_state["response"] = ""
-
+initialize_session_state()
 
 # 입력과 출력을 위한 두 개의 컬럼 생성
 col1, col2 = st.columns(2)
@@ -156,7 +78,7 @@ with col2:
         header_placeholder.markdown(
             "<h2 class='subheader'>특허문서 생성중...</h2>", unsafe_allow_html=True
         )
-        # 응답을 st.chat_message 스타일로 표시
+        # 응답을 표시
         with st.chat_message("user"):
             full_response = ""
             message_placeholder = st.empty()
