@@ -23,6 +23,28 @@ Simply write down your idea, and AI Patent Maker will help you bring it to life 
 - Invention Name Generation: Provides a suitable invention name that reflects the technical features of your idea.
 - Lightweight and Efficient: `AI Patent Maker` is based on the fine-tuned `Gemma2-2B-it model`, ensuring a lightweight and highly efficient performance without sacrificing the quality of the output. This makes the service fast and responsive even in resource-limited environments.
 
+## Gemma2 vs AI Patent Maker
+- This project utilizes Google's `Gemma2-2B-it` model as the base model, which has been fine-tuned using the LoRA (Low-Rank Adaptation) technique.
+- Here’s how you can phrase the section for comparing outputs between `Gemma2` and `fine-tuned model`, AI Patent Maker:
+### Input :
+아래의 '발명에 관한 설명'을 바탕으로 '발명의 명칭'과 '청구항'을 특허 문서의 형식으로 작성해주세요.: 
+
+상기 본 발명의 목적들 및 다른 특징들을 달성하기 위한 본 발명의 제1 관점에 따르면, 
+플레이트형의 바디부; 상기 바디부의 일측변에 소정 높이 단차지게 형성되는 제1 단차부; 
+및 상기 바디부의 타측변에 소정 높이 단차지게 형성되되 
+
+... (중략) ...
+
+상기 색편제조용 단층형성 도구는 각각 다른 곡률을 갖는 제1 및 제2 곡률부를 구비하는 바디부 가 복수로 이루어지는 세트로 구성되고, 
+상기 바디부에는 묶음 구멍이 형성되는 것이 바람직하다.
+### Output : Gemma2 vs AI Patent Maker
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e34c2447-822c-43de-a7bc-47458f4ddeda" alt="image">
+</p>
+
+
+
+
 ## Guide
 1. install Ollama
 - Visit Ollama's official website and follow the instructions to install Ollama on your machine.
