@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# # 홈 디렉토리로 이동
-# cd ~
-
-# # GitHub 레포지토리 클론
-# git clone https://github.com/DorianYellow/AI-Patent-Maker.git
-
 cd ~
 
 # 시스템 패키지 업데이트
@@ -35,7 +29,7 @@ work :
 PARAMETER temperature 0
 PARAMETER num_predict 700
 PARAMETER num_ctx 4096
-PARAMETER repeat_penalty 1.11
+PARAMETER repeat_penalty 1.15
 PARAMETER stop <s>
 PARAMETER stop </s>
 " > Modelfile
@@ -56,10 +50,10 @@ enableCORS = false" > config.toml
 cd ..
 VENV_NAME="pat"
 python3 -m venv $VENV_NAME
-source $VENV_NAME/bin/activate
 
 # 필요한 패키지 설치
-pip install streamlit ollama
+# source $VENV_NAME/bin/activate
+# pip install streamlit ollama
 
 
 # # Ollama 서버 실행 (백그라운드 실행)
