@@ -1,8 +1,10 @@
 # 💡 AI Patent Maker !
 
-- `AI Patent Maker` is an LLM-based service that assists with the complex and challenging task of drafting patent documents.
-- Simply write down your idea, and AI Patent Maker will help you bring it to life with detailed specifications.
-- The invention cited in the below example is based on the following patent invention : reg_no 1020240121955
+AI Patent Maker is an LLM-based service that assists with the complex and challenging task of drafting patent documents. 
+
+Simply write down your idea, and AI Patent Maker will help you bring it to life with detailed specifications.
+
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/240e3985-02d0-41b5-94a1-ccbd39aa14ae" width="777px" alt="GIF description"/>
 </p>
@@ -61,6 +63,14 @@ PARAMETER stop </s>
 - response = ollama.generate(model='your_registered_model_name', prompt=prompt, stream=True)
 8. Run the PatentMaker.py Script
 - streamlit run PatentMaker.py
+
+## Reference
+1. Dataset Source
+- AI Hub : https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=90
+- Kipris : http://www.kipris.or.kr/khome/main.jsp
+2. Inventions featured in this project
+- The invention cited in the example is based on the patent invention: reg_no 1020240121955
+- Two inventions cited as examples in the web service : reg_no 1020120000016, 1020220057166
 
 ## License
 This project is licensed under the [Apache License 2.0](LICENSE).
