@@ -18,7 +18,9 @@ def on_textarea_change():
     prompt = st.session_state["prompt"]
     if len(prompt) > 0:
         if len(prompt) < 100:
-            st.session_state["error"] = "100자 이상 입력해야 합니다"
+            st.session_state["error"] = (
+                f"100자 이상 입력해야 합니다 ({len(prompt)}자 입력중)"
+            )
             st.session_state["generated"] = False
             st.session_state["response"] = ""
         else:
