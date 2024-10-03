@@ -35,6 +35,9 @@ PARAMETER stop <s>
 PARAMETER stop </s>
 " > Modelfile
 
+(ollama serve > ollama.log 2>&1) &
+ollama ps
+
 # Ollama 모델 생성
 ollama create model_v0 -f Modelfile
 ollama list
