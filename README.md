@@ -1,20 +1,26 @@
 # 💡 AI Patent Maker !
 
-AI Patent Maker is an LLM-based service that assists with the complex and challenging task of drafting patent documents.
+`AI Patent Maker` is an LLM-based service that assists with the complex and challenging task of drafting patent documents.
 
 Simply write down your idea, and AI Patent Maker will help you bring it to life with detailed specifications.
 
 <img src="https://github.com/user-attachments/assets/240e3985-02d0-41b5-94a1-ccbd39aa14ae" width="777px" alt="GIF description"/>
 
+The invention cited in the example is based on the following patent invention : reg_no 1020240121955
+
 
 ## Introduction
-The process of drafting patent documents can be overwhelming and time-consuming. AI Patent Maker simplifies this by allowing users to input their ideas in natural language. The service then utilizes a large language model (LLM) to automatically generate patent claims and invention names, helping users create well-structured patent documents with ease.
+- The process of drafting patent documents can be overwhelming and time-consuming.
+- `AI Patent Maker` simplifies this by allowing users to input their ideas in natural language.
+- The service then utilizes a large language model (LLM) to automatically generate patent claims and invention names, helping users create well-structured patent documents with ease.
+- `AI Patent Maker` service is being operated temporaily at the following address : https://o9ebd0ewxw0ehv-8501.proxy.runpod.net/
+
 
 
 ## Features
 - Automatic Patent Claim Generation: Automatically generates patent claims based on your idea and invention description.
 - Invention Name Generation: Provides a suitable invention name that reflects the technical features of your idea.
-- Lightweight and Efficient: AI Patent Maker is based on the fine-tuned `Gemma2-2B-it model`, ensuring a lightweight and highly efficient performance without sacrificing the quality of the output. This makes the service fast and responsive even in resource-limited environments.
+- Lightweight and Efficient: `AI Patent Maker` is based on the fine-tuned `Gemma2-2B-it model`, ensuring a lightweight and highly efficient performance without sacrificing the quality of the output. This makes the service fast and responsive even in resource-limited environments.
 
 ## Guide
 1. install Ollama
