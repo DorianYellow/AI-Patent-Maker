@@ -58,6 +58,7 @@ echo "[ server ]
 enableCORS = false" > config.toml
 
 # 가상 환경 생성 및 활성화
+cd ..
 python3 -m venv pat
 source pat/bin/activate
 
