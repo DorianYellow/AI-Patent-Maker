@@ -17,11 +17,6 @@ apt-get install -y vim
 # Hugging Face에서 모델 다운로드
 curl -L -O https://huggingface.co/ys-s/pat_name_claim/resolve/main/unsloth.Q5_K_M.gguf
 
-# Ollama 서버 실행 (백그라운드 실행)
-ollama serve > ollama.log 2>&1
-
-ollama ps
-
 # Modelfile 생성
 echo "FROM unsloth.Q5_K_M.gguf
 
@@ -66,5 +61,10 @@ source $VENV_NAME/bin/activate
 # 필요한 패키지 설치
 pip install streamlit ollama
 
-# Streamlit 애플리케이션 실행 (백그라운드 실행)
-streamlit run app.py > app.log 2>&1
+
+# # Ollama 서버 실행 (백그라운드 실행)
+# (ollama serve > ollama.log 2>&1) &
+# ollama ps
+
+# # Streamlit 애플리케이션 실행 (백그라운드 실행)
+# (streamlit run app.py > app.log 2>&1) &
