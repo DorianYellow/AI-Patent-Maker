@@ -1,6 +1,11 @@
 #!/bin/bash
 
-# 홈 디렉토리로 이동
+# # 홈 디렉토리로 이동
+# cd ~
+
+# # GitHub 레포지토리 클론
+# git clone https://github.com/DorianYellow/AI-Patent-Maker.git
+
 cd ~
 
 # 시스템 패키지 업데이트
@@ -8,9 +13,6 @@ apt-get update
 
 # Vim 설치
 apt-get install -y vim
-
-# GitHub 레포지토리 클론
-git clone https://github.com/DorianYellow/AI-Patent-Maker.git
 
 # Hugging Face에서 모델 다운로드
 curl -L -O https://huggingface.co/ys-s/pat_name_claim/resolve/main/unsloth.Q5_K_M.gguf
