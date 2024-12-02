@@ -1,6 +1,6 @@
 name: Deployment
 description: Code Deployment
-title: ":rocket: Deploy : "
+title: ":rocket: deploy : "
 labels: ["deployment"]
 body:
   - type: textarea
