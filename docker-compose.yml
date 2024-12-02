@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  patent-maker:
+    build:
+      context: .
+    image: dorianyellow/patent-maker
+    container_name: patent-maker
+    ports:
+      - "8501:8501"
