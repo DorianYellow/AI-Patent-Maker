@@ -1,0 +1,14 @@
+name: Deployment
+description: Code Deployment
+title: ":rocket: Deploy : "
+labels: ["deployment"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: Content
+      description: Please describe the changes related to the deployment.
+      value: |
+        -
+    validations:
+      required: true
