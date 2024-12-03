@@ -48,6 +48,17 @@ Simply write down your idea, and AI Patent Maker will help you bring it to life 
 
 
 ## Guide
+### Option 1 : Using Pre-Built Docker Image
+1. Pull the Pre-Built Docker Image
+- The pre-built Docker image for the Patent Maker service is available at dorianyellow/patent-maker.
+- Pull the image using the following command : docker pull dorianyellow/patent-maker
+2. Run the Docker Container
+- Start the container using the following command : docker run -d --name patent-maker -p 8501:8501 dorianyellow/patent-maker
+- Once the container is running, you can access the service by opening your browser and navigating to: http://localhost:8501
+- If you are running the service on a remote server, replace localhost with the server's IP address or domain name.
+3. Stop and Remove the Docker Container
+- For terminate the service, using the following command : docker rm -f patent-maker
+### Option 2 : Local Setup
 1. install Ollama
 - Visit Ollama's official website and follow the instructions to install Ollama on your machine.
 2. Download the Model from Hugging Face (You can use either of the following two links)
